@@ -21,11 +21,9 @@ input{
     width: 9rem;
     height: 3rem;
 }
-.gif{
-    margin-top: 23rem;
-}
+
 .gif img{
-height: 18rem;
+height: 22rem;
 }
 
 @media (max-width: 1358px) {
@@ -33,19 +31,12 @@ height: 18rem;
         height: 18rem;  
     }
 }
-@media (max-width: 1108px) {
+@media (max-width: 908px) {
     .gif img{
-        height: 10rem;  
-        margin-top: 8rem;
+        height: 13rem;  
     }
 }
-
-@media (max-height: 796px){
-    .gif img{
-        margin-top:1rem ;
-    }
-}
-    
+ 
 .runner{
     animation: run 3s linear;
     animation-duration: 5s;
