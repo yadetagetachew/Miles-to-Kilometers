@@ -22,25 +22,30 @@ input{
     height: 3rem;
 }
 .gif{
-    margin-top: 17rem;
+    margin-top: 23rem;
 }
 .gif img{
 height: 18rem;
 }
-@media{
-    @media (max-width: 1358px) {
-        .gif img{
-            height: 18rem;  
-        }
-      }
-      @media (max-width: 1108px) {
-        .gif img{
-            height: 10rem;  
-            margin-top: 8rem;
-        }
-      }
-      
+
+@media (max-width: 1358px) {
+    .gif img{
+        height: 18rem;  
+    }
 }
+@media (max-width: 1108px) {
+    .gif img{
+        height: 10rem;  
+        margin-top: 8rem;
+    }
+}
+
+@media (max-height: 796px){
+    .gif img{
+        margin-top:1rem ;
+    }
+}
+    
 .runner{
     animation: run 3s linear;
     animation-duration: 5s;
