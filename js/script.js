@@ -3,11 +3,15 @@ function convert() {
     let kilo = document.getElementById('kilo');
 
     if (isNaN(miles)){
-        kilo.innerHTML = 'Please enter number';
+        kilo.innerHTML = 'NaN';
     }
     else{
         let kiloOutput = 1.60934 * parseFloat(miles);
-        kilo.innerHTML = 'Kilometers = ' + kiloOutput;
+        kilo.innerHTML = kiloOutput;
     }
     
 };
+
+function animation(){
+    document.getElementById('move').className = 'runner'
+}

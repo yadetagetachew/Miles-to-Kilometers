@@ -1,3 +1,55 @@
 body{
     height: 100%;
+    background-image: url('/img/road3.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Bangers', cursive;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+input{
+    background-color: rgb(250, 236, 218);
+    border: rgb(211, 214, 47);
+    border-radius: 10px;
+    width: 9rem;
+    
+}
+.output{
+    background-color:rgb(250, 236, 218) ;
+    border-radius: 10px;
+    width: 9rem;
+    height: 3rem;
+}
+.gif{
+    margin-top: 19rem;
+}
+.gif img{
+height: 18rem;
+}
+@media{
+    @media (max-width: 1358px) {
+        .gif img{
+            height: 18rem;  
+        }
+      }
+      @media (max-width: 1108px) {
+        .gif img{
+            height: 10rem;  
+            margin-top: 8rem;
+        }
+      }
+      
+}
+.runner{
+    animation: run 3s linear;
+    animation-duration: 5s;
+}
+
+@keyframes run{
+   
+    100%{
+        
+        transform: translateX(100rem);
+    }
 }

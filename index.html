@@ -14,16 +14,30 @@
      <!-- JavaScript -->
      <script src="/js/script.js" defer></script>
 
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+     
     <title>Miles to Kilometers</title>
   </head>
   <body>
 
-    <div class="container d-flex justify-content-center align-content-center">
-<div class="content">
-  <p>Enter miles: <input type="text" id ="miles"></p>
-      <p id="kilo">Kilometers: _____ </p>
-      <button type="button" onclick="convert()">Convert</button>
-</div>
+    <div class="mt-5 container d-flex justify-content-between align-content-center">
+      <div class="miles">
+        <p>Enter miles:<br><input type="text" class="output" id ="miles"></p>
+      </div>
+      <div class="converter">
+        <button class="btn btn-lg btn-warning" type="button" onclick="convert(), animation()">Convert</button>
+      </div>
+      <div class="kilometer">
+        <p>Kilometers:</p>
+        <p class="output" id="kilo"></p>
+      </div>
+    </div>
+
+    <div class="gif">
+      <a href="https://gifs.alphacoders.com/gifs/view/88396"><img id="move" class="img-fluid" src="https://giffiles.alphacoders.com/883/88396.gif" ></a>
     </div>
     
 
