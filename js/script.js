@@ -7,8 +7,9 @@ function convert() {
     }
     else{
         let kiloOutput = 1.60934 * parseFloat(miles);
-        kilo.innerHTML = kiloOutput;
+        kilo.innerHTML = kiloOutput.toFixed(2);
     }
+    animation()
 };
 
 function animation(){
